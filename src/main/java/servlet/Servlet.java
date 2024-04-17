@@ -20,8 +20,8 @@ public class Servlet extends HttpServlet {
         Cookie cookie = new Cookie("value","12");
         resp.addCookie(cookie);
         HttpSession session = req.getSession();
-        session.getAttribute("Count");
-//        req.getSession().getServletContext().getAttribute("Count");
+//        session.getAttribute("Count");
+        req.getSession().getServletContext().getAttribute("Count");
     }
 
     @Override
