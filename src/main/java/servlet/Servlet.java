@@ -22,6 +22,8 @@ public class Servlet extends HttpServlet {
         HttpSession session = req.getSession();
 //        session.getAttribute("Count");
         req.getSession().getServletContext().getAttribute("Count");
+
+
     }
 
     @Override
